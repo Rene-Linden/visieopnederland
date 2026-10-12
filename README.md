@@ -45,6 +45,7 @@ Daarna worden **automatisch** bijgewerkt: de homepage (3 nieuwste artikelen), de
 | `icoon` | nee | Een naam uit `_data/iconen.yml`: `grafiek`, `vergrootglas`, `huis`, `document`, `mensen`, `balans`. |
 | `bronnen` | nee | Lijst met bronnen; elk met `titel` en optioneel `url` en/of `toelichting`. |
 | `uitgelicht` | nee | `uitgelicht: true` zet dit artikel in de balk bovenaan, ook als het niet het nieuwste is. Zet het bij maar één artikel tegelijk. |
+| `ondertitel` | nee | Korte ondertitel, schuingedrukt onder de titel. |
 | `voorbeeld` | nee | `voorbeeld: true` toont de melding dat het een voorbeeldbeschouwing is. |
 
 Leestijd wordt automatisch berekend (ca. 200 woorden per minuut).

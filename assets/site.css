@@ -87,6 +87,10 @@ h3{font-size:25px;margin:12px 0}
 .art-meta{color:var(--muted);font-size:15px;margin:0 0 30px}
 .art-tekst p,.art-tekst li{font-size:18px}
 .art-tekst a{color:#805c3a;text-decoration:underline}
+.art-tekst h2{font-size:clamp(24px,3vw,30px);margin:44px 0 12px}
+.art-tekst h3{font-size:22px;margin:32px 0 10px}
+.art-tekst hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+.art-sub{font-family:Georgia,serif;font-style:italic;font-size:clamp(20px,2.4vw,24px);color:#50616c;margin:0 0 14px}
 .notice{background:#f2f4f3;padding:18px;border-left:3px solid var(--accent);font-size:14px;color:#52616a}
 .bronnen{margin-top:40px;border-top:1px solid var(--line);padding-top:24px}
 .bronnen h2{font-size:24px;margin:0 0 12px}

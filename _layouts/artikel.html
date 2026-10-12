@@ -5,6 +5,9 @@ layout: default
   <a href="/artikelen/" class="back">← Alle artikelen</a>
   <p class="eyebrow art-thema"><a href="/artikelen/?thema={{ page.thema }}">{% include thema-naam.html slug=page.thema %}</a></p>
   <h1>{{ page.title }}</h1>
+  {%- if page.ondertitel %}
+  <p class="art-sub">{{ page.ondertitel }}</p>
+  {%- endif %}
   <p class="art-meta">{% include datum.html d=page.date %} · {% include leestijd.html tekst=content %}</p>
 
   <div class="art-tekst">
