@@ -97,6 +97,7 @@ h3{font-size:25px;margin:12px 0}
 .bronnen ol{padding-left:22px;color:var(--muted);font-size:15px}
 .bronnen li{margin-bottom:6px}
 .bronnen a{color:#805c3a;text-decoration:underline}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bronnen li:target{background:#fbf3e6}
 .over-artikel{margin-top:32px;border-top:1px solid var(--line);padding-top:24px;color:#50616c;font-size:15px}
 .over-artikel h2{font-size:20px;margin:0 0 10px}
