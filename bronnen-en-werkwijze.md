@@ -31,6 +31,18 @@ Informatie wordt alleen als feit opgenomen als de bron duidelijk is en te contro
 
 Naast feiten en cijfers publiceren we artikelen en blogs met een visie op Nederland. Daarin worden onderwerpen verkend, verbanden gelegd en standpunten beargumenteerd. Een blog geeft de visie van de auteur weer en is bedoeld om het denken en gesprek op gang te brengen, niet als vaststaande waarheid. Ook in artikelen en blogs vermelden we de bronnen van feitelijke beweringen, zodat je zelf kunt nagaan wat feit is en wat interpretatie.
 
+## Samenwerking tussen mens en AI
+
+De artikelen van Visie op Nederland komen tot stand in samenwerking tussen menselijke redactionele inbreng en kunstmatige intelligentie (AI).
+
+De redactie bepaalt de onderwerpen, onderzoeksvragen, invalshoeken en uiteindelijke boodschap. AI wordt ingezet als onderzoeks-, analyse- en schrijfpartner en helpt bij het structureren van informatie, het verkennen van verschillende perspectieven en het uitwerken van conceptteksten.
+
+Wij beschouwen dit als een vorm van co-creatie: de combinatie van menselijke nieuwsgierigheid, kritisch denken en oordeelsvorming met de mogelijkheden van AI.
+
+AI is daarbij geen onafhankelijke bron van waarheid. Feitelijke beweringen moeten worden getoetst aan controleerbare bronnen. De redactie blijft verantwoordelijk voor de inhoud, de bronvermelding en de uiteindelijke publicatie.
+
+**Niet wie een tekst formuleert, maar de kwaliteit en controleerbaarheid van de inhoud moeten centraal staan.**
+
 ## Scenario’s
 
 Soms verkennen we mogelijke toekomstscenario’s. Een scenario is geen voorspelling en geen standpunt. Het is een verkenning van wat er zou kunnen gebeuren onder bepaalde aannames. We vermelden altijd op welke aannames een scenario rust, zodat je zelf kunt beoordelen hoe waarschijnlijk of wenselijk je het vindt.
