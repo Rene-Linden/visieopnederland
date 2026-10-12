@@ -99,6 +99,11 @@ h3{font-size:25px;margin:12px 0}
 .bronnen a{color:#805c3a;text-decoration:underline}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bronnen li:target{background:#fbf3e6}
+.bron-uitleg{font-size:14px;margin:14px 0 0}
+.bron-uitleg a{text-decoration:none!important;font-weight:700}
+.pagina{padding-bottom:70px}
+.pagina .art-tekst ul{padding-left:22px}
+.pagina .art-tekst li{margin-bottom:8px}
 .over-artikel{margin-top:32px;border-top:1px solid var(--line);padding-top:24px;color:#50616c;font-size:15px}
 .over-artikel h2{font-size:20px;margin:0 0 10px}
 .art-cta{margin-top:44px;background:var(--cream);border:1px solid #e4e1d6;border-left:4px solid var(--ochre-dark);border-radius:4px;padding:28px 30px}

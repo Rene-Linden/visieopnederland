@@ -26,6 +26,7 @@ layout: default
       <li id="bron-{{ forloop.index }}">{% if b.url %}<a href="{{ b.url }}" target="_blank" rel="noopener noreferrer">{{ b.titel }}<span class="sr-only"> (opent in nieuw venster)</span></a>{% else %}{{ b.titel }}{% endif %}{% if b.toelichting %} — {{ b.toelichting }}{% endif %}</li>
       {%- endfor %}
     </ol>
+    <p class="bron-uitleg"><a href="/bronnen-en-werkwijze/">Hoe we met bronnen werken →</a></p>
   </section>
   {%- endif %}
 

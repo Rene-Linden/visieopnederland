@@ -11,7 +11,7 @@ over_dit_artikel: |
   **Visie op Nederland — Verder kijken. Beter begrijpen.**
 bronnen:
   - titel: "Parlement.com — Grondwetsherziening 1848"
-    url: "https://www.parlement.com/grondwetsherziening-1848"
+    url: "https://parlement.mi01.montesquieu-instituut.nl/grondwetsherziening-1848"
     toelichting: "Uitleg over de invoering van politieke ministeriële verantwoordelijkheid, rechtstreekse verkiezingen en de versterking van de Tweede Kamer."
   - titel: "Kiesraad — Viering 100 jaar algemeen kiesrecht"
     url: "https://www.kiesraad.nl/actueel/nieuws/2017/12/12/viering-100-jaar-algemeen-kiesrecht"

@@ -75,6 +75,6 @@ Het thema verschijnt dan automatisch als filterknop op `/artikelen/` en is te ge
 | `_includes/` | Gedeelde onderdelen: header, balk, footer, kaart |
 | `assets/basis.css` | Opmaak van header, balk en footer |
 | `assets/site.css` | Opmaak van homepage, archief en artikelen |
-| `uitgangspunten-visie-op-nederland.html`, `disclaimer.html` | Losse pagina's |
+| `uitgangspunten-visie-op-nederland.html`, `disclaimer.html`, `bronnen-en-werkwijze.md` | Losse pagina's |
 | `dashboard.html` | Conceptdashboard; niet gelinkt en niet in Google |
 | `robots.txt` | Zoekmachines mogen alles indexeren |
