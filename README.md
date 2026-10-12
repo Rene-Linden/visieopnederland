@@ -43,9 +43,10 @@ Daarna worden **automatisch** bijgewerkt: de homepage (3 nieuwste artikelen), de
 | `thema` | ja | Korte naam uit `_data/themas.yml`: `bestuur`, `media` of `toekomst`. |
 | `samenvatting` | ja | Korte samenvatting voor kaarten en de meta-omschrijving. |
 | `icoon` | nee | Een naam uit `_data/iconen.yml`: `grafiek`, `vergrootglas`, `huis`, `document`, `mensen`, `balans`. |
-| `bronnen` | nee | Lijst met bronnen; elk met `titel` en optioneel `url` en/of `toelichting`. |
+| `bronnen` | nee | Lijst met bronnen; elk met `titel` en optioneel `url` en/of `toelichting`. In de tekst verwijs je ernaar met `[\[1\]](#bron-1)`, `[\[2\]](#bron-2)`, enz. |
 | `uitgelicht` | nee | `uitgelicht: true` zet dit artikel in de balk bovenaan, ook als het niet het nieuwste is. Zet het bij maar één artikel tegelijk. |
 | `ondertitel` | nee | Korte ondertitel, schuingedrukt onder de titel. |
+| `over_dit_artikel` | nee | Korte verantwoording, getoond onder de bronnen. Begin met `\|` en zet de tekst op de regels eronder, ingesprongen met twee spaties. |
 | `voorbeeld` | nee | `voorbeeld: true` toont de melding dat het een voorbeeldbeschouwing is. |
 
 Leestijd wordt automatisch berekend (ca. 200 woorden per minuut).

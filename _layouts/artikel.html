@@ -23,9 +23,16 @@ layout: default
     <h2>Bronnen</h2>
     <ol>
       {%- for b in page.bronnen %}
-      <li>{% if b.url %}<a href="{{ b.url }}" rel="noopener">{{ b.titel }}</a>{% else %}{{ b.titel }}{% endif %}{% if b.toelichting %} — {{ b.toelichting }}{% endif %}</li>
+      <li id="bron-{{ forloop.index }}">{% if b.url %}<a href="{{ b.url }}" rel="noopener">{{ b.titel }}</a>{% else %}{{ b.titel }}{% endif %}{% if b.toelichting %} — {{ b.toelichting }}{% endif %}</li>
       {%- endfor %}
     </ol>
+  </section>
+  {%- endif %}
+
+  {%- if page.over_dit_artikel %}
+  <section class="over-artikel">
+    <h2>Over dit artikel</h2>
+    {{ page.over_dit_artikel | markdownify }}
   </section>
   {%- endif %}
 

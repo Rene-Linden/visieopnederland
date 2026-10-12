@@ -97,6 +97,9 @@ h3{font-size:25px;margin:12px 0}
 .bronnen ol{padding-left:22px;color:var(--muted);font-size:15px}
 .bronnen li{margin-bottom:6px}
 .bronnen a{color:#805c3a;text-decoration:underline}
+.bronnen li:target{background:#fbf3e6}
+.over-artikel{margin-top:32px;border-top:1px solid var(--line);padding-top:24px;color:#50616c;font-size:15px}
+.over-artikel h2{font-size:20px;margin:0 0 10px}
 .art-cta{margin-top:44px;background:var(--cream);border:1px solid #e4e1d6;border-left:4px solid var(--ochre-dark);border-radius:4px;padding:28px 30px}
 .art-cta h2{font-size:28px;margin:0 0 10px}
 .art-cta p{font-size:17px;color:#50616c;margin:0 0 18px}
