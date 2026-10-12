@@ -1,0 +1,10 @@
+{%- assign k = include.artikel -%}
+<article class="card{% if include.groot %} feat{% endif %}" data-thema="{{ k.thema }}">
+  <div class="icon">{% include icoon.html naam=k.icoon %}</div>
+  <div>
+    <div class="meta"><span class="tag">{% include thema-naam.html slug=k.thema %}</span>{% if include.datum %} · {% include datum.html d=k.date %}{% endif %} · {% include leestijd.html tekst=k.content %}</div>
+    <h3>{{ k.title }}</h3>
+    <p>{{ k.samenvatting }}</p>
+    <a class="more" href="{{ k.url }}">Lees de beschouwing →</a>
+  </div>
+</article>

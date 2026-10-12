@@ -1,0 +1,61 @@
+---
+layout: default
+title: Artikelen
+description: Beschouwingen over hoe Nederland wordt bestuurd, hoe maatschappelijke vraagstukken ontstaan en wat er beter kan.
+permalink: /artikelen/
+---
+<section class="page-head"><div class="wrap">
+  <div class="eyebrow">Inzicht &amp; beschouwing</div>
+  <h1>Artikelen</h1>
+  <p class="intro">Beschouwingen over hoe Nederland wordt bestuurd, hoe maatschappelijke vraagstukken ontstaan en wat er beter kan. Waar feitelijke claims worden gedaan, horen controleerbare bronnen bij.</p>
+</div></section>
+
+<section class="section wrap">
+  <div class="filters" role="group" aria-label="Filter op thema">
+    <button class="chip" type="button" data-thema="" aria-pressed="true">Alle</button>
+    {%- for t in site.data.themas %}
+    <button class="chip" type="button" data-thema="{{ t.slug }}" aria-pressed="false">{{ t.naam }}</button>
+    {%- endfor %}
+  </div>
+
+  <div class="archive" id="archief">
+    {%- assign alle = site.artikelen | sort: "date" | reverse %}
+    {%- for a in alle %}
+    {% include kaart.html artikel=a datum=true %}
+    {%- endfor %}
+  </div>
+  <p class="leeg" id="leeg" hidden>Er zijn nog geen artikelen in dit thema.</p>
+  <div class="more-wrap"><button class="btn btn-outline" type="button" id="meer" hidden>Meer laden</button></div>
+</section>
+
+<script>
+(function(){
+  var PER_KEER = 12;
+  var kaarten = Array.prototype.slice.call(document.querySelectorAll('#archief .card'));
+  var knoppen = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var meer = document.getElementById('meer');
+  var thema = new URLSearchParams(location.search).get('thema') || '';
+  if (!knoppen.some(function(k){ return k.dataset.thema === thema; })) thema = '';
+  var aantal = PER_KEER;
+
+  function toon(){
+    var passend = kaarten.filter(function(k){ return !thema || k.dataset.thema === thema; });
+    kaarten.forEach(function(k){ k.hidden = true; });
+    passend.slice(0, aantal).forEach(function(k){ k.hidden = false; });
+    meer.hidden = passend.length <= aantal;
+    document.getElementById('leeg').hidden = passend.length > 0;
+    knoppen.forEach(function(k){ k.setAttribute('aria-pressed', k.dataset.thema === thema); });
+  }
+
+  knoppen.forEach(function(k){
+    k.addEventListener('click', function(){
+      thema = k.dataset.thema;
+      aantal = PER_KEER;
+      history.replaceState(null, '', thema ? '?thema=' + thema : location.pathname);
+      toon();
+    });
+  });
+  meer.addEventListener('click', function(){ aantal += PER_KEER; toon(); });
+  toon();
+})();
+</script>

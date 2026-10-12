@@ -1,0 +1,3 @@
+{%- comment -%} Bepaalt het uitgelichte artikel: een artikel met "uitgelicht: true", anders het nieuwste. {%- endcomment -%}
+{%- assign uitgelicht = site.artikelen | where: "uitgelicht", true | sort: "date" | last -%}
+{%- unless uitgelicht -%}{%- assign uitgelicht = site.artikelen | sort: "date" | last -%}{%- endunless -%}

@@ -1,0 +1,3 @@
+{%- assign dt_maanden = "januari,februari,maart,april,mei,juni,juli,augustus,september,oktober,november,december" | split: "," -%}
+{%- assign dt_i = include.d | date: "%-m" | minus: 1 -%}
+<time datetime="{{ include.d | date: '%Y-%m-%d' }}">{{ include.d | date: "%-d" }} {{ dt_maanden[dt_i] }} {{ include.d | date: "%Y" }}</time>

@@ -1,0 +1,25 @@
+title: Visie op Nederland
+description: Onafhankelijke beschouwingen over Nederland. Feiten als basis, ruimte voor nieuwe perspectieven.
+url: "https://visieopnederland.nl"
+email: info@visieopnederland.nl
+lang: nl
+timezone: Europe/Amsterdam
+
+collections:
+  artikelen:
+    output: true
+    permalink: /artikelen/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: artikelen
+    values:
+      layout: artikel
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - "Voorbeeld Dashboard.png"

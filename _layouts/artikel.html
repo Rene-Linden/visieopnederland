@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="article-view wrap">
+  <a href="/artikelen/" class="back">← Alle artikelen</a>
+  <p class="eyebrow art-thema"><a href="/artikelen/?thema={{ page.thema }}">{% include thema-naam.html slug=page.thema %}</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="art-meta">{% include datum.html d=page.date %} · {% include leestijd.html tekst=content %}</p>
+
+  <div class="art-tekst">
+{{ content }}
+  </div>
+
+  {%- if page.voorbeeld %}
+  <p class="notice">Dit is een voorbeeldbeschouwing voor het websiteconcept. Voor publicatie kunnen feitelijke claims worden uitgebreid met bronverwijzingen, publicatiedatum en redactionele controle.</p>
+  {%- endif %}
+
+  {%- if page.bronnen and page.bronnen.size > 0 %}
+  <section class="bronnen">
+    <h2>Bronnen</h2>
+    <ol>
+      {%- for b in page.bronnen %}
+      <li>{% if b.url %}<a href="{{ b.url }}" rel="noopener">{{ b.titel }}</a>{% else %}{{ b.titel }}{% endif %}{% if b.toelichting %} — {{ b.toelichting }}{% endif %}</li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  <section class="art-cta">
+    <h2>Denk mee</h2>
+    <p>Mis je iets, of heb je een bron die dit aanvult? Stuur het ons. We nemen alleen bijdragen mee die onderbouwd zijn met controleerbare bronnen.</p>
+    <a class="btn btn-accent" href="mailto:{{ site.email }}?subject={{ page.title | uri_escape | replace: '&', '%26' }}">Stuur je aanvulling →</a>
+  </section>
+</article>
+
+{%- assign zelfde = site.artikelen | where: "thema", page.thema | where_exp: "a", "a.url != page.url" | sort: "date" | reverse %}
+{%- assign anders = site.artikelen | where_exp: "a", "a.thema != page.thema" | sort: "date" | reverse %}
+{%- assign leesook = zelfde | concat: anders %}
+{%- if leesook.size > 0 %}
+<section class="leesook">
+  <div class="wrap">
+    <h2>Lees ook</h2>
+    <div class="grid">
+      {%- for a in leesook limit: 2 %}
+      {% include kaart.html artikel=a %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

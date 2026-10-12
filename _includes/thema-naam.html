@@ -1,0 +1,1 @@
+{%- assign th = site.data.themas | where: "slug", include.slug | first -%}{%- if th -%}{{ th.naam }}{%- else -%}{{ include.slug }}{%- endif -%}

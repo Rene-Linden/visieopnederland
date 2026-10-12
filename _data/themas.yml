@@ -1,0 +1,11 @@
+# Thema's voor de artikelen.
+# slug: korte naam die je in een artikel gebruikt (thema: bestuur) en die in de filter-URL staat (/artikelen/?thema=bestuur)
+# naam: zoals het thema op de site wordt getoond
+# Een nieuw thema toevoegen = hieronder een regel-paar bijzetten.
+
+- slug: bestuur
+  naam: "Bestuur & Samenleving"
+- slug: media
+  naam: "Media & Democratie"
+- slug: toekomst
+  naam: "Toekomst & Beleid"

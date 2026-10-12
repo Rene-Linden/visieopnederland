@@ -1,0 +1,5 @@
+{%- comment -%} Leestijd bij ca. 200 woorden per minuut, minimaal 1 minuut. {%- endcomment -%}
+{%- assign lt_woorden = include.tekst | strip_html | number_of_words -%}
+{%- assign lt_min = lt_woorden | plus: 100 | divided_by: 200 -%}
+{%- if lt_min < 1 -%}{%- assign lt_min = 1 -%}{%- endif -%}
+{{ lt_min }} min lezen

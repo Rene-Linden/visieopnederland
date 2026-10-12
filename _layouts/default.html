@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{%- if page.url == "/" %}
+{%- assign paginatitel = site.title | append: " — Verder kijken. Beter begrijpen." %}
+{%- else %}
+{%- assign paginatitel = page.title | append: " — " | append: site.title %}
+{%- endif %}
+{%- assign omschrijving = page.samenvatting | default: page.description | default: site.description %}
+<title>{{ paginatitel }}</title>
+<meta name="description" content="{{ omschrijving | strip_html | strip_newlines | escape }}">
+{%- if page.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{%- else %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- endif %}
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ omschrijving | strip_html | strip_newlines | escape }}">
+<meta property="og:type" content="{% if page.collection == 'artikelen' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="/assets/basis.css">
+{%- unless page.eigen_stijl %}
+<link rel="stylesheet" href="/assets/site.css">
+{%- endunless %}
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar inhoud</a>
+{% include balk.html %}
+{% include header.html %}
+<div id="inhoud">
+{{ content }}
+</div>
+{% include footer.html %}
+</body>
+</html>

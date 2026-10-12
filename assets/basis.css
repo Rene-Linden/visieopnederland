@@ -1,0 +1,35 @@
+/* Gedeeld door alle pagina's: balk nieuwste artikel, header en footer */
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:10px;top:10px;background:#fff;padding:10px;z-index:10}
+a:focus-visible,button:focus-visible{outline:3px solid #e0b17a;outline-offset:2px}
+
+.announce{background:#f3e7d6;color:#142e43;font:14px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;border-bottom:1px solid #e6d3b8}
+.announce .in{width:min(1120px,calc(100% - 40px));margin:auto;padding:9px 0;text-align:center}
+.announce a{color:inherit;text-decoration:none;display:inline-block;padding:2px 0}
+.announce a:hover{text-decoration:underline}
+.announce b{color:#8c5f2f}
+.announce .go{font-weight:700;white-space:nowrap;margin-left:4px}
+
+.site-top{background:#142e43;color:#fff}
+.site-nav{width:min(1120px,calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0}
+.site-nav a{color:inherit;text-decoration:none}
+.site-nav a:hover{text-decoration:underline}
+.site-brand{font-family:Georgia,serif;font-size:24px;letter-spacing:-.5px;font-weight:bold;line-height:1.65}
+.site-brand span{color:#e0b17a}
+.site-links{display:flex;align-items:center;gap:26px;font:14px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif}
+.site-links a{padding:6px 0}
+.site-links a[aria-current]{color:#e0b17a}
+.site-links .nav-cta{background:#e0b17a;color:#142e43;font-weight:700;padding:7px 16px;border-radius:3px}
+.site-links .nav-cta:hover{background:#ecc796;text-decoration:none}
+
+.site-foot{padding:32px 0;background:#102536;color:#c5d0d6;font:13px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif}
+.site-foot .in{width:min(1120px,calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;gap:20px}
+.site-foot a{color:inherit}
+
+@media(max-width:800px){
+  .site-nav{align-items:flex-start;flex-direction:column;gap:12px;padding:18px 0}
+  .site-links{gap:6px 18px;flex-wrap:wrap}
+  .site-links a{padding:8px 0}
+  .site-links .nav-cta{padding:8px 16px}
+  .site-foot .in{flex-direction:column}
+}

@@ -1,0 +1,9 @@
+# Iconen voor artikelkaarten (SVG-tekening op een vlak van 100x100).
+# In een artikel kies je er één met bijvoorbeeld: icoon: grafiek
+
+grafiek: '<path d="M18 78V52h16v26M42 78V33h16v45M66 78V18h16v60M14 83h72"/>'
+vergrootglas: '<circle cx="44" cy="44" r="25"/><path d="m63 63 22 22M33 44l8 8 15-19"/>'
+huis: '<path d="M17 75h66M23 75V50l27-25 27 25v25M37 75V57h26v18M50 17v8"/>'
+document: '<path d="M28 14h32l14 14v58H28zM60 14v14h14M38 46h26M38 58h26M38 70h18"/>'
+mensen: '<circle cx="36" cy="36" r="11"/><circle cx="66" cy="40" r="9"/><path d="M16 80c2-14 10-22 20-22s18 8 20 22M56 80c1-10 5-16 11-16s11 6 13 16"/>'
+balans: '<path d="M50 16v66M30 82h40M20 30h60M20 30 10 54h20zM80 30 70 54h20zM10 54c0 6 20 6 20 0M70 54c0 6 20 6 20 0"/>'
