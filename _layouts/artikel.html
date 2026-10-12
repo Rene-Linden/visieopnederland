@@ -29,7 +29,7 @@ layout: default
   <section class="art-cta">
     <h2>Denk mee</h2>
     <p>Mis je iets, of heb je een bron die dit aanvult? Stuur het ons. We nemen alleen bijdragen mee die onderbouwd zijn met controleerbare bronnen.</p>
-    <a class="btn btn-accent" href="mailto:{{ site.email }}?subject={{ page.title | uri_escape | replace: '&', '%26' }}">Stuur je aanvulling →</a>
+    <a class="btn btn-accent" href="mailto:{{ site.email }}?subject={{ page.title | uri_escape | replace: '&', '%26' | replace: '?', '%3F' }}">Stuur je aanvulling →</a>
   </section>
 </article>
 
